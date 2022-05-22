@@ -70,7 +70,7 @@ const NavBar = () => {
     <>
       <HStack mt="25px" direction={{ md: "row" }} justify="space-between">
         <Stack direction={{ md: "row" }} spacing="18px" alignItems="center">
-          <Link href="/">
+          <Link href="/kr">
             {/* <HomeButton /> */}
             <Box>
               <Button fontSize="18px" fontWeight="bold" variant="ghost">
@@ -81,12 +81,12 @@ const NavBar = () => {
           {/* <ProjectButton /> */}
           <Link href="/projects">
             <Button variant="link" colorScheme="black">
-              Projects
+              포트폴리오
             </Button>
           </Link>
           <Link href="https://github.com/hgseo16">
             <Button variant="link" colorScheme="black">
-              Github
+              깃헙 (Github)
             </Button>
           </Link>
         </Stack>
@@ -97,10 +97,10 @@ const NavBar = () => {
             </MenuButton>
             <MenuList>
               <Link href="/">
-                <MenuItem>English</MenuItem>
+                <MenuItem>영어</MenuItem>
               </Link>
               <Link href="/kr">
-                <MenuItem>Korean</MenuItem>
+                <MenuItem>한국어</MenuItem>
               </Link>
             </MenuList>
           </Menu>

@@ -18,25 +18,38 @@ const Projects = () => {
     imageAlt: "Emory Marketplace Homepage",
     endpoint: "emory_marketplace",
     projectTitle: "Emory Marketplace",
-    projectExplanation:
+    summary:
       "Website created using the MERN stack where Emory students can exchange textbooks.",
+    p: "Content to be updated soon",
   };
 
   const projectInfo2 = {
-    imageUrl: "https://bit.ly/2Z4KKcF",
+    imageUrl: "images/data_seeder.jpg",
     imageAlt: "xingAPI codebase",
     endpoint: "data_seeder",
     projectTitle: "Stock Data Seeder",
-    projectExplanation:
+    summary:
       "Data seeder written in python which regularly updates a local mysql database with the price action of all the tickers from the KOSPI/KOSDAQ market.",
+    p: "Content to be updated soon",
   };
 
   const projectInfo3 = {
+    imageUrl: "images/personal_website.jpg",
+    imageAlt: "Personal Website",
+    endpoint: "personal_website",
+    projectTitle: "Personal Website",
+    summary: "Hyoung Gyoo's personal website made using Next.js and Chakra UI.",
+    p: "Content to be updated soon",
+  };
+
+  const projectInfo4 = {
     imageUrl: "images/twitch_bros.png",
     imageAlt: "Twitch Bros Homepage",
     endpoint: "twitch_bros",
     projectTitle: "Twitch Bros",
-    projectExplanation: "fun project",
+    summary:
+      "Sentiment analysis of topics modeled from real-time Twitch chats.",
+    p: "Content to be updated soon",
   };
 
   return (
@@ -52,6 +65,7 @@ const Projects = () => {
             <ProjectCard projectInfo={projectInfo} />
             <ProjectCard projectInfo={projectInfo2} />
             <ProjectCard projectInfo={projectInfo3} />
+            <ProjectCard projectInfo={projectInfo4} />
           </Box>
         </Box>
       </Container>
