@@ -33,7 +33,7 @@ const Home = () => {
           <HStack justify="space-between">
             <VStack mb={50} align="left">
               <Heading as="h1" size="xl" mb="10px">
-                서형규 (Hyoung Gyoo Seo)
+                서형규
               </Heading>
               <Divider />
               <strong>
