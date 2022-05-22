@@ -59,7 +59,7 @@ const Home = () => {
           <Divider />
           <Paragraph>
             Hi! My name is Hyoung Gyoo Seo. I also go by Kevin for other
-            people's convenience. I am currently studying towards my BS in
+            people&apos;s convenience. I am currently studying towards my BS in
             Computer Science at Emory University. I genuinely enjoy the problem
             solving aspects of coding and especially love to code websites and
             anything related to the stock market. This website was made using
