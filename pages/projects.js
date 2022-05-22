@@ -17,6 +17,7 @@ const Projects = () => {
 
   const projectInfo = {
     imageUrl: "images/Kevin.jpg",
+    imageAlt: "Emory Marketplace Homepage",
     projectTitle: "Emory Marketplace",
     projectExplanation:
       "Website created using the MERN stack where Emory students can exchange textbooks.",
@@ -24,6 +25,7 @@ const Projects = () => {
 
   const projectInfo2 = {
     imageUrl: "https://bit.ly/2Z4KKcF",
+    imageAlt: "xingAPI codebase",
     projectTitle: "Stock Data Seeder",
     projectExplanation:
       "Data seeder written in python which regularly updates a local mysql database with the price action of all the tickers from the KOSPI/KOSDAQ market.",
@@ -31,6 +33,7 @@ const Projects = () => {
 
   const projectInfo3 = {
     imageUrl: "https://bit.ly/2Z4KKcF",
+    imageAlt: "Twitch Bros Homepage",
     projectTitle: "Twitch Bros",
     projectExplanation: "fun project",
   };

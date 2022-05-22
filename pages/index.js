@@ -45,6 +45,7 @@ const Home = () => {
                   size="2xl"
                   name="Hyoung Gyoo Seo"
                   src="/images/Kevin.jpg"
+                  alt="Kevin's Photo"
                   showBorder="true"
                   borderColor="white"
                   borderWidth="3px"

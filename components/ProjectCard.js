@@ -11,7 +11,8 @@ import NavBar from "../components/NavBar";
 import Paragraph from "../components/Paragraph";
 
 const ProjectCard = (props) => {
-  const { imageUrl, projectTitle, projectExplanation } = props.projectInfo;
+  const { imageUrl, imageAlt, projectTitle, projectExplanation } =
+    props.projectInfo;
 
   return (
     <Box
@@ -21,7 +22,7 @@ const ProjectCard = (props) => {
       overflow="hidden"
       m="25px"
     >
-      <Image src={imageUrl} />
+      <Image src={imageUrl} alt={imageAlt} />
 
       <Box p="6">
         <Box
