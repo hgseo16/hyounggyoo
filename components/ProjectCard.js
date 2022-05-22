@@ -20,7 +20,7 @@ const ProjectCard = (props) => {
       borderWidth="1px"
       borderRadius="lg"
       overflow="hidden"
-      m="25px"
+      m="50px"
     >
       <Image src={imageUrl} alt={imageAlt} />
 

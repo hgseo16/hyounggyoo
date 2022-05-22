@@ -16,7 +16,7 @@ const Projects = () => {
   const formBackground = useColorModeValue("gray.100", "gray.700");
 
   const projectInfo = {
-    imageUrl: "images/Kevin.jpg",
+    imageUrl: "images/emory_marketplace.png",
     imageAlt: "Emory Marketplace Homepage",
     projectTitle: "Emory Marketplace",
     projectExplanation:
@@ -32,7 +32,7 @@ const Projects = () => {
   };
 
   const projectInfo3 = {
-    imageUrl: "https://bit.ly/2Z4KKcF",
+    imageUrl: "/images/twitch_bros.png",
     imageAlt: "Twitch Bros Homepage",
     projectTitle: "Twitch Bros",
     projectExplanation: "fun project",
@@ -42,9 +42,8 @@ const Projects = () => {
     <Container maxW="80vh">
       <NavBar />
       <Container maxW="60vh">
-        {/* <Container maxW="60vh" bg="teal.400"> */}
-        <Box direction="column" align="left" m="10vh auto">
-          <Heading size="md" variant="section-title">
+        <Box direction="column" align="left" mt="100px" mb="10vh">
+          <Heading as="h1" size="xl" mb="10px">
             Projects
           </Heading>
           <Divider mb="50px" />

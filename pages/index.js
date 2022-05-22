@@ -29,7 +29,7 @@ const Home = () => {
       <NavBar />
       <Container maxW="60vh">
         {/* <Container maxW="60vh" bg="teal.400"> */}
-        <Box direction="column" align="left" m="10vh auto">
+        <Box direction="column" align="left" mt="100px" mb="10vh">
           <HStack justify="space-between">
             <VStack mb={50} align="left">
               <Heading as="h1" size="xl" mb="10px">

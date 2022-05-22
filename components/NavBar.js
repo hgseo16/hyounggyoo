@@ -15,6 +15,53 @@ import {
 } from "@chakra-ui/react";
 import { SunIcon } from "@chakra-ui/icons";
 import { BsGlobe } from "react-icons/bs";
+import { useRouter } from "next/router";
+
+const HomeButton = () => {
+  const router = useRouter();
+  console.log(router.asPath);
+
+  if (router.asPath == "/projects") {
+    return (
+      <Link href="/">
+        <Button colorScheme="link">
+          <Text>HomeButton</Text>
+        </Button>
+      </Link>
+    );
+  } else if (router.asPath == "/") {
+    return (
+      <Link href="/">
+        <Button colorScheme="blue">
+          <Text>HomeButton</Text>
+        </Button>
+      </Link>
+    );
+  }
+};
+
+const ProjectButton = () => {
+  const router = useRouter();
+  console.log(router.asPath);
+
+  if (router.asPath == "/projects") {
+    return (
+      <Link href="/projects">
+        <Button colorScheme="blue">
+          <Text>Projects</Text>
+        </Button>
+      </Link>
+    );
+  } else if (router.asPath == "/") {
+    return (
+      <Link href="/projects">
+        <Button variant="ghost" colorScheme="black">
+          <Text>Projects</Text>
+        </Button>
+      </Link>
+    );
+  }
+};
 
 const NavBar = () => {
   const { toggleColorMode } = useColorMode();
@@ -30,13 +77,16 @@ const NavBar = () => {
               </Text>
             </Box>
           </Link>
-          <Link href="/projects">
+          <ProjectButton />
+          {/* <Link href="/projects">
             <Box>
               <Text>Projects</Text>
             </Box>
-          </Link>
+          </Link> */}
           <Link href="https://github.com/hgseo16">
-            <Text>Github</Text>
+            <Button variant="link" colorScheme="black">
+              Github
+            </Button>
           </Link>
         </Stack>
         <Box right="20px">
