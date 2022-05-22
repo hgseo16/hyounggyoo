@@ -1,13 +1,5 @@
-import {
-  Container,
-  Box,
-  Divider,
-  Image,
-  Heading,
-  useColorMode,
-  useColorModeValue,
-  Link,
-} from "@chakra-ui/react";
+import { Box, Link, Image } from "@chakra-ui/react";
+// import Image from "next/image";
 import NavBar from "../components/NavBar";
 import Paragraph from "../components/Paragraph";
 

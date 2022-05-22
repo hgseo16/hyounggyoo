@@ -2,13 +2,11 @@ import {
   Container,
   Box,
   Divider,
-  Image,
   Heading,
   useColorMode,
   useColorModeValue,
 } from "@chakra-ui/react";
 import NavBar from "../components/NavBar";
-import Paragraph from "../components/Paragraph";
 import ProjectCard from "../components/ProjectCard";
 
 const Projects = () => {
@@ -34,7 +32,7 @@ const Projects = () => {
   };
 
   const projectInfo3 = {
-    imageUrl: "/images/twitch_bros.png",
+    imageUrl: "images/twitch_bros.png",
     imageAlt: "Twitch Bros Homepage",
     endpoint: "twitch_bros",
     projectTitle: "Twitch Bros",
