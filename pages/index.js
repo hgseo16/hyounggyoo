@@ -59,12 +59,11 @@ const Home = () => {
           <Divider />
           <Paragraph>
             Hi! My name is Hyoung Gyoo Seo. I also go by Kevin for other
-            people&apos;s convenience. I love to hang out with Esther Kim during
-            my free time. I am currently studying towards my BS in Computer
-            Science at Emory University. I genuinely enjoy the problem solving
-            aspects of coding and especially love to code websites and anything
-            related to the stock market. This website was made using Next.js and
-            Chakra UI. I hope you enjoy!
+            people&apos;s convenience. I am currently studying towards my BS in
+            Computer Science at Emory University. I genuinely enjoy the problem
+            solving aspects of coding and especially love to code websites and
+            anything related to the stock market. This website was made using
+            Next.js and Chakra UI. I hope you enjoy!
           </Paragraph>
           <Heading size="md" variant="section-title">
             Education
