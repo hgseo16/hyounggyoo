@@ -18,6 +18,7 @@ const Projects = () => {
   const projectInfo = {
     imageUrl: "images/emory_marketplace.png",
     imageAlt: "Emory Marketplace Homepage",
+    endpoint: "emory_marketplace",
     projectTitle: "Emory Marketplace",
     projectExplanation:
       "Website created using the MERN stack where Emory students can exchange textbooks.",
@@ -26,6 +27,7 @@ const Projects = () => {
   const projectInfo2 = {
     imageUrl: "https://bit.ly/2Z4KKcF",
     imageAlt: "xingAPI codebase",
+    endpoint: "data_seeder",
     projectTitle: "Stock Data Seeder",
     projectExplanation:
       "Data seeder written in python which regularly updates a local mysql database with the price action of all the tickers from the KOSPI/KOSDAQ market.",
@@ -34,6 +36,7 @@ const Projects = () => {
   const projectInfo3 = {
     imageUrl: "/images/twitch_bros.png",
     imageAlt: "Twitch Bros Homepage",
+    endpoint: "twitch_bros",
     projectTitle: "Twitch Bros",
     projectExplanation: "fun project",
   };
@@ -42,9 +45,9 @@ const Projects = () => {
     <Container maxW="80vh">
       <NavBar />
       <Container maxW="60vh">
-        <Box direction="column" align="left" mt="100px" mb="10vh">
+        <Box direction="column" align="left" mt="70px" mb="10vh">
           <Heading as="h1" size="xl" mb="10px">
-            Projects
+            Here are some of my most recent works!
           </Heading>
           <Divider mb="50px" />
           <Box align="center">
