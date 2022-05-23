@@ -17,52 +17,6 @@ import { SunIcon } from "@chakra-ui/icons";
 import { BsGlobe } from "react-icons/bs";
 import { useRouter } from "next/router";
 
-// const HomeButton = () => {
-//   const router = useRouter();
-//   console.log(router.asPath);
-
-//   if (router.asPath == "/") {
-//     return (
-//       <Link href="/">
-//         <Button fontSize="18px" fontWeight="bold" colorScheme="blue">
-//           <Text>Home</Text>
-//         </Button>
-//       </Link>
-//     );
-//   } else {
-//     return (
-//       <Link href="/">
-//         <Button fontSize="18px" fontWeight="bold" variant="ghost">
-//           <Text>Home</Text>
-//         </Button>
-//       </Link>
-//     );
-//   }
-// };
-
-// const ProjectButton = () => {
-//   const router = useRouter();
-//   console.log(router.asPath);
-
-//   if (router.asPath == "/projects") {
-//     return (
-//       <Link href="/projects">
-//         <Button colorScheme="blue">
-//           <Text>Projects</Text>
-//         </Button>
-//       </Link>
-//     );
-//   } else {
-//     return (
-//       <Link href="/projects">
-//         <Button variant="ghost" colorScheme="black">
-//           <Text>Projects</Text>
-//         </Button>
-//       </Link>
-//     );
-//   }
-// };
-
 const NavBar = () => {
   const { toggleColorMode } = useColorMode();
 

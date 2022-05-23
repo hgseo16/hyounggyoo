@@ -9,6 +9,7 @@ import {
   VStack,
   Stack,
   Heading,
+  Text,
   Button,
   UnorderedList,
   ListItem,
@@ -29,40 +30,52 @@ const Home = () => {
       <NavBar />
       <Container maxW="60vh">
         {/* <Container maxW="60vh" bg="teal.400"> */}
-        <Box direction="column" align="left" mt="70px" mb="10vh">
+        <Box direction="column" align="left" mt="70px">
           <HStack justify="space-between">
             <VStack mb={50} align="left">
               <Heading as="h1" size="xl" mb="10px">
                 서형규
               </Heading>
               <Divider />
-              <strong>
-                <Box>에모리 대학교 컴퓨터공학 전공 & 경제학 부전공</Box>
-              </strong>
+              {/* <strong>
+                <Box>에모리 대학교</Box>
+                <Box>컴퓨터공학 전공 & 경제학 부전공</Box>
+              </strong> */}
+              <Box>
+                <strong>에모리 대학교</strong>
+              </Box>
+              <Box>
+                <strong>컴퓨터공학 전공 & 경제학 부전공</strong>
+              </Box>
+              <Box>
+                <strong>
+                  이메일:{" "}
+                  <Text color="blue.500" as="u">
+                    seohyounggyoo@gmail.com
+                  </Text>
+                </strong>
+              </Box>
             </VStack>
-            <Wrap>
-              <WrapItem>
-                <Avatar
-                  size="2xl"
-                  name="Hyoung Gyoo Seo"
-                  src="/images/Kevin.jpg"
-                  alt="Kevin's Photo"
-                  showBorder="true"
-                  borderColor="white"
-                  borderWidth="3px"
-                />
-              </WrapItem>
-            </Wrap>
+            <Avatar
+              size="2xl"
+              name="Hyoung Gyoo Seo"
+              src="/images/Kevin.jpg"
+              alt="Kevin's Photo"
+              showBorder="true"
+              borderColor="white"
+              borderWidth="4px"
+            />
           </HStack>
           <Heading size="md" variant="section-title">
             소개
           </Heading>
           <Divider />
           <Paragraph>
-            안녕하세요, 제 개인 웹사이트에 오신걸 환영합니다. 저는 현재 에모리
-            대학교에서 컴퓨터공학을 공부하고 있는 서형규라고 합니다. 저는
-            코딩할때 필연적으로 마주치는 기술적 난관들에 도전하는 것을 즐기며
-            <strong>리액트 (React) 웹사이트나, 주식 시장</strong> 관련된 코딩
+            안녕하세요, 제 개인 웹사이트에 오신걸 환영합니다. 저는 현재{" "}
+            <strong>에모리 대학교</strong>에서 <strong>컴퓨터공학</strong>을
+            전공하고 있는 <strong>서형규</strong>라고 합니다. 저는 코딩할때
+            필연적으로 마주치는 기술적 난관들에 도전하는 것을 즐기며,
+            <strong> 리액트 (React) 웹사이트 또는 주식 시장</strong> 관련된 코딩
             프로젝트를 특히나 좋아합니다. 이 웹사이트는 <strong>Next.js</strong>
             와 <strong>Chakra UI</strong>를 이용해 만들었습니다. 현재 사이트는
             꾸준히 업데이트 중이니 오류나 미흡한 부분이 있을시 양해
@@ -106,8 +119,9 @@ const Home = () => {
           <Divider />
           <UnorderedList mt="20px" mb="50px">
             <ListItem mb="15px">
-              <strong>프런트엔드:</strong>
-              <HStack spacing={4} mt="15px">
+              <strong>Frontend:</strong>
+              <Box mt="15px">
+                {/* <HStack spacing={4} mt="15px"> */}
                 {[
                   "React",
                   "React-Redux",
@@ -122,15 +136,16 @@ const Home = () => {
                     borderRadius="full"
                     variant="solid"
                     colorScheme="blue"
+                    m="3px"
                   >
                     <TagLabel>{skills}</TagLabel>
                   </Tag>
                 ))}
-              </HStack>
+              </Box>
             </ListItem>
             <ListItem mb="15px">
-              <strong>백엔드:</strong>
-              <HStack spacing={4} mt="15px">
+              <strong>Backend:</strong>
+              <Box mt="15px">
                 {[
                   "Node.js",
                   "Express.js",
@@ -138,6 +153,12 @@ const Home = () => {
                   "MongoDB",
                   "mySQL",
                   "Bootstrap",
+                  "Material UI",
+                  "Chakra UI",
+                  "S3",
+                  "EC2",
+                  "RDS",
+                  "GCP",
                 ].map((skills) => (
                   <Tag
                     size="lg"
@@ -145,30 +166,16 @@ const Home = () => {
                     borderRadius="full"
                     variant="solid"
                     colorScheme="blue"
+                    m="3px"
                   >
                     <TagLabel>{skills}</TagLabel>
                   </Tag>
                 ))}
-              </HStack>
-              <HStack spacing={4} mt="15px">
-                {["Material UI", "Chakra UI", "S3", "EC2", "RDS", "GCP"].map(
-                  (skills) => (
-                    <Tag
-                      size="lg"
-                      key="lg"
-                      borderRadius="full"
-                      variant="solid"
-                      colorScheme="blue"
-                    >
-                      <TagLabel>{skills}</TagLabel>
-                    </Tag>
-                  )
-                )}
-              </HStack>
+              </Box>
             </ListItem>
             <ListItem mb="15px">
-              <strong>언어:</strong>{" "}
-              <HStack spacing={4} mt="15px">
+              <strong>Languages:</strong>{" "}
+              <Box mt="15px">
                 {["Javascript", "Java", "Python", "Dart"].map((skills) => (
                   <Tag
                     size="lg"
@@ -176,11 +183,12 @@ const Home = () => {
                     borderRadius="full"
                     variant="solid"
                     colorScheme="blue"
+                    m="3px"
                   >
                     <TagLabel>{skills}</TagLabel>
                   </Tag>
                 ))}
-              </HStack>
+              </Box>
             </ListItem>
           </UnorderedList>
           <Heading size="md" variant="section-title">
@@ -205,6 +213,7 @@ const Home = () => {
           </UnorderedList>
         </Box>
       </Container>
+      <Divider />
     </Container>
   );
 };

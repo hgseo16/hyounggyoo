@@ -7,12 +7,15 @@ import {
   Divider,
   HStack,
   VStack,
-  Stack,
+  Flex,
   Heading,
   Button,
   UnorderedList,
   ListItem,
   Tag,
+  Text,
+  Link,
+  SimpleGrid,
   TagLabel,
   useColorMode,
   useColorModeValue,
@@ -28,41 +31,54 @@ const Home = () => {
     <Container maxW="80vh">
       <NavBar />
       <Container maxW="60vh">
-        {/* <Container maxW="60vh" bg="teal.400"> */}
-        <Box direction="column" align="left" mt="70px" mb="10vh">
+        {/* <Containr maxW="60vh" bg="teal.400"> */}
+        <Box direction="column" align="left" mt="70px">
           <HStack justify="space-between">
             <VStack mb={50} align="left">
               <Heading as="h1" size="xl" mb="10px">
-                Hyoung Gyoo Seo
+                Kevin Seo
               </Heading>
               <Divider />
-              <strong>
-                <Box>B.S. in Computer Science</Box>
-                <Box>& Minor in Economics</Box>
-              </strong>
+              <Box>
+                <strong>B.S. </strong>in
+                <strong> Computer Science</strong>
+                <strong> & Minor </strong>in
+                <strong> Economics </strong>
+              </Box>
+              <Box>
+                <strong>@ Emory University</strong>
+              </Box>
+              <Box>
+                <strong>
+                  Email:{" "}
+                  <Text color="blue.500" as="u">
+                    seohyounggyoo@gmail.com
+                  </Text>
+                </strong>
+              </Box>
             </VStack>
-            <Wrap>
-              <WrapItem>
-                <Avatar
-                  size="2xl"
-                  name="Hyoung Gyoo Seo"
-                  src="/images/Kevin.jpg"
-                  alt="Kevin's Photo"
-                  showBorder="true"
-                  borderColor="white"
-                  borderWidth="3px"
-                />
-              </WrapItem>
-            </Wrap>
+            {/* </WrapItem> */}
+            {/* <WrapItem right="20px"> */}
+            <Avatar
+              size="2xl"
+              name="Hyoung Gyoo Seo"
+              src="/images/Kevin.jpg"
+              alt="Kevin's Photo"
+              showBorder="true"
+              borderColor="white"
+              borderWidth="4px"
+            />
+            {/* </WrapItem> */}
+            {/* </Wrap> */}
           </HStack>
           <Heading size="md" variant="section-title">
             About Me
           </Heading>
           <Divider />
           <Paragraph>
-            Hi! My name is <strong>Hyoung Gyoo Seo.</strong> I also go by Kevin
-            for other people&apos;s convenience. I am currently studying towards
-            my BS in Computer Science at Emory University. I genuinely enjoy the
+            Hi! My name is <strong>Hyoung Gyoo Seo.</strong> I also go by{" "}
+            <strong>Kevin.</strong> I am currently a junior at Emory University
+            studying towards BS in Computer Science. I genuinely enjoy the
             <strong> problem solving</strong> aspects of coding and especially
             love to code <strong> React websites </strong> and anything related
             to the <strong>stock market.</strong> This website was made using{" "}
@@ -75,7 +91,7 @@ const Home = () => {
           <Divider />
           <UnorderedList mt="15px" mb="50px">
             <ListItem mb="15px">
-              <strong>Expected Graduation 2023:</strong> B.S. in Computer
+              <strong>Expected graduation 2023:</strong> B.S. in Computer
               Science & Minor in Economics at Emory University
             </ListItem>
             <ListItem mb="15px">
@@ -109,14 +125,17 @@ const Home = () => {
           <UnorderedList mt="20px" mb="50px">
             <ListItem mb="15px">
               <strong>Frontend:</strong>
-              <HStack spacing={4} mt="15px">
+              <Box mt="15px">
+                {/* <HStack spacing={4} mt="15px"> */}
                 {[
                   "React",
                   "React-Redux",
                   "Next.js",
+                  "Typescript",
                   "Material UI",
                   "Bootstrap",
                   "Chakra UI",
+                  "Flutter",
                 ].map((skills) => (
                   <Tag
                     size="lg"
@@ -124,15 +143,16 @@ const Home = () => {
                     borderRadius="full"
                     variant="solid"
                     colorScheme="blue"
+                    m="3px"
                   >
                     <TagLabel>{skills}</TagLabel>
                   </Tag>
                 ))}
-              </HStack>
+              </Box>
             </ListItem>
             <ListItem mb="15px">
               <strong>Backend:</strong>
-              <HStack spacing={4} mt="15px">
+              <Box mt="15px">
                 {[
                   "Node.js",
                   "Express.js",
@@ -140,6 +160,12 @@ const Home = () => {
                   "MongoDB",
                   "mySQL",
                   "Bootstrap",
+                  "Material UI",
+                  "Chakra UI",
+                  "S3",
+                  "EC2",
+                  "RDS",
+                  "GCP",
                 ].map((skills) => (
                   <Tag
                     size="lg"
@@ -147,30 +173,16 @@ const Home = () => {
                     borderRadius="full"
                     variant="solid"
                     colorScheme="blue"
+                    m="3px"
                   >
                     <TagLabel>{skills}</TagLabel>
                   </Tag>
                 ))}
-              </HStack>
-              <HStack spacing={4} mt="15px">
-                {["Material UI", "Chakra UI", "S3", "EC2", "RDS", "GCP"].map(
-                  (skills) => (
-                    <Tag
-                      size="lg"
-                      key="lg"
-                      borderRadius="full"
-                      variant="solid"
-                      colorScheme="blue"
-                    >
-                      <TagLabel>{skills}</TagLabel>
-                    </Tag>
-                  )
-                )}
-              </HStack>
+              </Box>
             </ListItem>
             <ListItem mb="15px">
               <strong>Languages:</strong>{" "}
-              <HStack spacing={4} mt="15px">
+              <Box mt="15px">
                 {["Javascript", "Java", "Python", "Dart"].map((skills) => (
                   <Tag
                     size="lg"
@@ -178,11 +190,12 @@ const Home = () => {
                     borderRadius="full"
                     variant="solid"
                     colorScheme="blue"
+                    m="3px"
                   >
                     <TagLabel>{skills}</TagLabel>
                   </Tag>
                 ))}
-              </HStack>
+              </Box>
             </ListItem>
           </UnorderedList>
           <Heading size="md" variant="section-title">
@@ -192,8 +205,8 @@ const Home = () => {
           <UnorderedList mt="20px" mb="50px">
             <ListItem mb="15px">
               <strong>2019.11:</strong> K-Startup Preliminary Startup League -
-              Small and Medium Venture Business Minister Award
-            </ListItem>{" "}
+              Small and Medium Venture Business Minister Award PUT ARTICLE LINKS
+            </ListItem>
             <ListItem mb="15px">
               <strong>2019.10:</strong> Pocheon City Certifcate of Commendation
             </ListItem>
@@ -208,6 +221,7 @@ const Home = () => {
           </UnorderedList>
         </Box>
       </Container>
+      <Divider />
     </Container>
   );
 };
