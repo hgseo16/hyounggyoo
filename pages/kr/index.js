@@ -126,9 +126,11 @@ const Home = () => {
                   "React",
                   "React-Redux",
                   "Next.js",
+                  "Typescript",
                   "Material UI",
                   "Bootstrap",
                   "Chakra UI",
+                  "Flutter",
                 ].map((skills) => (
                   <Tag
                     size="lg"
@@ -152,9 +154,7 @@ const Home = () => {
                   "Socket.IO",
                   "MongoDB",
                   "mySQL",
-                  "Bootstrap",
-                  "Material UI",
-                  "Chakra UI",
+                  "PostgreSQL",
                   "S3",
                   "EC2",
                   "RDS",
