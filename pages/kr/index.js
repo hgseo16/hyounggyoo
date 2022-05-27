@@ -92,7 +92,7 @@ const Home = () => {
               bgPosition="center"
               mb={2}
             >
-              <Button colorScheme="blue">See my projects!</Button>
+              <Button colorScheme="blue">개인 프로젝트 보러가기</Button>
             </Box>
           </Link>
           <Heading size="md" variant="section-title">
