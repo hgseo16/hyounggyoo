@@ -7,9 +7,11 @@ import {
   Divider,
   HStack,
   VStack,
+  Stack,
   Flex,
   Heading,
   Button,
+  ButtonGroup,
   UnorderedList,
   ListItem,
   Tag,
@@ -85,6 +87,19 @@ const Home = () => {
             <strong>Next.js</strong> and <strong>Chakra UI.</strong> I hope you
             enjoy!
           </Paragraph>
+          <Link href="/projects">
+            <Box
+              display="flex"
+              alignItems="center"
+              justifyContent="center"
+              width="100%"
+              py={12}
+              bgPosition="center"
+              mb={2}
+            >
+              <Button colorScheme="blue">See my projects!</Button>
+            </Box>
+          </Link>
           <Heading size="md" variant="section-title">
             Education
           </Heading>

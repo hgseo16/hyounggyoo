@@ -8,6 +8,7 @@ import {
   HStack,
   VStack,
   Stack,
+  Link,
   Heading,
   Text,
   Button,
@@ -81,6 +82,19 @@ const Home = () => {
             꾸준히 업데이트 중이니 오류나 미흡한 부분이 있을시 양해
             부탁드겠습니다.
           </Paragraph>
+          <Link href="/projects">
+            <Box
+              display="flex"
+              alignItems="center"
+              justifyContent="center"
+              width="100%"
+              py={12}
+              bgPosition="center"
+              mb={2}
+            >
+              <Button colorScheme="blue">See my projects!</Button>
+            </Box>
+          </Link>
           <Heading size="md" variant="section-title">
             학력 & 관련 교육
           </Heading>
