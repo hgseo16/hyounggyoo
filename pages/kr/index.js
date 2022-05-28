@@ -87,10 +87,12 @@ const Home = () => {
               display="flex"
               alignItems="center"
               justifyContent="center"
+              height="60px"
               width="100%"
               py={12}
               bgPosition="center"
-              mb={2}
+              mb="15px"
+              mt="15px"
             >
               <Button colorScheme="blue">개인 프로젝트 보러가기</Button>
             </Box>

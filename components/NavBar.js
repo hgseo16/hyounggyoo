@@ -14,6 +14,7 @@ import {
   MenuItem,
 } from "@chakra-ui/react";
 import { SunIcon } from "@chakra-ui/icons";
+import { GoMarkGithub } from "react-icons/go";
 import { BsGlobe } from "react-icons/bs";
 import { useRouter } from "next/router";
 
@@ -40,7 +41,7 @@ const NavBar = () => {
           </Link>
           <Link href="https://github.com/hgseo16">
             <Button variant="link" colorScheme="black">
-              Github
+              <Icon as={GoMarkGithub} boxSize={4} />
             </Button>
           </Link>
         </Stack>

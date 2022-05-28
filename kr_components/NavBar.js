@@ -15,6 +15,7 @@ import {
 } from "@chakra-ui/react";
 import { SunIcon } from "@chakra-ui/icons";
 import { BsGlobe } from "react-icons/bs";
+import { GoMarkGithub } from "react-icons/go";
 import { useRouter } from "next/router";
 
 // const HomeButton = () => {
@@ -85,8 +86,11 @@ const NavBar = () => {
             </Button>
           </Link>
           <Link href="https://github.com/hgseo16">
-            <Button variant="link" colorScheme="black">
+            {/* <Button variant="link" colorScheme="black">
               깃헙 (Github)
+            </Button> */}
+            <Button variant="link" colorScheme="black">
+              <Icon as={GoMarkGithub} boxSize={4} />
             </Button>
           </Link>
         </Stack>

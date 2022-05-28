@@ -41,11 +41,17 @@ const Home = () => {
                 Kevin Seo
               </Heading>
               <Divider />
-              <Box>
+              {/* <Box>
                 <strong>B.S. </strong>in
                 <strong> Computer Science</strong>
                 <strong> & Minor </strong>in
                 <strong> Economics </strong>
+              </Box> */}
+              <Box>
+                <strong>B.S. in Computer Science </strong>
+              </Box>
+              <Box>
+                <strong> & Minor in Economics </strong>
               </Box>
               <Box>
                 <strong>@ Emory University</strong>
@@ -92,10 +98,12 @@ const Home = () => {
               display="flex"
               alignItems="center"
               justifyContent="center"
+              height="50px"
               width="100%"
               py={12}
               bgPosition="center"
-              mb={2}
+              mb="15px"
+              mt="15px"
             >
               <Button colorScheme="blue">See my projects!</Button>
             </Box>
