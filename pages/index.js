@@ -181,18 +181,20 @@ const Home = () => {
             <ListItem mb="15px">
               <strong>Languages:</strong>{" "}
               <Box mt="15px">
-                {["Javascript", "Java", "Python", "Dart"].map((skills) => (
-                  <Tag
-                    size="lg"
-                    key="lg"
-                    borderRadius="full"
-                    variant="solid"
-                    colorScheme="blue"
-                    m="3px"
-                  >
-                    <TagLabel>{skills}</TagLabel>
-                  </Tag>
-                ))}
+                {["HTML", "CSS", "Javascript", "Java", "Python", "Dart"].map(
+                  (skills) => (
+                    <Tag
+                      size="lg"
+                      key="lg"
+                      borderRadius="full"
+                      variant="solid"
+                      colorScheme="blue"
+                      m="3px"
+                    >
+                      <TagLabel>{skills}</TagLabel>
+                    </Tag>
+                  )
+                )}
               </Box>
             </ListItem>
           </UnorderedList>
