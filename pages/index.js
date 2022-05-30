@@ -7,9 +7,11 @@ import {
   Divider,
   HStack,
   VStack,
+  Stack,
   Flex,
   Heading,
   Button,
+  ButtonGroup,
   UnorderedList,
   ListItem,
   Tag,
@@ -39,11 +41,17 @@ const Home = () => {
                 Kevin Seo
               </Heading>
               <Divider />
-              <Box>
+              {/* <Box>
                 <strong>B.S. </strong>in
                 <strong> Computer Science</strong>
                 <strong> & Minor </strong>in
                 <strong> Economics </strong>
+              </Box> */}
+              <Box>
+                <strong>B.S. in Computer Science </strong>
+              </Box>
+              <Box>
+                <strong> & Minor in Economics </strong>
               </Box>
               <Box>
                 <strong>@ Emory University</strong>
@@ -85,6 +93,21 @@ const Home = () => {
             <strong>Next.js</strong> and <strong>Chakra UI.</strong> I hope you
             enjoy!
           </Paragraph>
+          <Link href="/projects">
+            <Box
+              display="flex"
+              alignItems="center"
+              justifyContent="center"
+              height="50px"
+              width="100%"
+              py={12}
+              bgPosition="center"
+              mb="15px"
+              mt="15px"
+            >
+              <Button colorScheme="blue">See my projects!</Button>
+            </Box>
+          </Link>
           <Heading size="md" variant="section-title">
             Education
           </Heading>
