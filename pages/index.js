@@ -154,7 +154,6 @@ const Home = () => {
                   "React",
                   "React-Redux",
                   "Next.js",
-                  "Typescript",
                   "Material UI",
                   "Bootstrap",
                   "Chakra UI",
@@ -204,20 +203,26 @@ const Home = () => {
             <ListItem mb="15px">
               <strong>Languages:</strong>{" "}
               <Box mt="15px">
-                {["HTML", "CSS", "Javascript", "Java", "Python", "Dart"].map(
-                  (skills) => (
-                    <Tag
-                      size="lg"
-                      key="lg"
-                      borderRadius="full"
-                      variant="solid"
-                      colorScheme="blue"
-                      m="3px"
-                    >
-                      <TagLabel>{skills}</TagLabel>
-                    </Tag>
-                  )
-                )}
+                {[
+                  "HTML",
+                  "CSS",
+                  "Javascript",
+                  "Typescript",
+                  "Java",
+                  "Python",
+                  "Dart",
+                ].map((skills) => (
+                  <Tag
+                    size="lg"
+                    key="lg"
+                    borderRadius="full"
+                    variant="solid"
+                    colorScheme="blue"
+                    m="3px"
+                  >
+                    <TagLabel>{skills}</TagLabel>
+                  </Tag>
+                ))}
               </Box>
             </ListItem>
           </UnorderedList>

@@ -75,7 +75,7 @@ const Home = () => {
             안녕하세요, 제 개인 웹사이트에 오신걸 환영합니다. 저는 현재{" "}
             <strong>에모리 대학교</strong>에서 <strong>컴퓨터공학</strong>을
             전공하고 있는 <strong>서형규</strong>라고 합니다. 저는 코딩할때
-            필연적으로 마주치는 기술적 난관들에 도전하는 것을 즐기며,
+            필연적으로 마주하는 기술적 난관들에 도전하는 것을 즐기며,
             <strong> 리액트 (React) 웹사이트 또는 주식 시장</strong> 관련된 코딩
             프로젝트를 특히나 좋아합니다. 이 웹사이트는 <strong>Next.js</strong>
             와 <strong>Chakra UI</strong>를 이용해 만들었습니다. 현재 사이트는
@@ -142,7 +142,6 @@ const Home = () => {
                   "React",
                   "React-Redux",
                   "Next.js",
-                  "Typescript",
                   "Material UI",
                   "Bootstrap",
                   "Chakra UI",
@@ -192,20 +191,26 @@ const Home = () => {
             <ListItem mb="15px">
               <strong>Languages:</strong>{" "}
               <Box mt="15px">
-                {["HTML", "CSS", "Javascript", "Java", "Python", "Dart"].map(
-                  (skills) => (
-                    <Tag
-                      size="lg"
-                      key="lg"
-                      borderRadius="full"
-                      variant="solid"
-                      colorScheme="blue"
-                      m="3px"
-                    >
-                      <TagLabel>{skills}</TagLabel>
-                    </Tag>
-                  )
-                )}
+                {[
+                  "HTML",
+                  "CSS",
+                  "Javascript",
+                  "Typescript",
+                  "Java",
+                  "Python",
+                  "Dart",
+                ].map((skills) => (
+                  <Tag
+                    size="lg"
+                    key="lg"
+                    borderRadius="full"
+                    variant="solid"
+                    colorScheme="blue"
+                    m="3px"
+                  >
+                    <TagLabel>{skills}</TagLabel>
+                  </Tag>
+                ))}
               </Box>
             </ListItem>
           </UnorderedList>
