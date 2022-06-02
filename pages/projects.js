@@ -7,7 +7,8 @@ import {
   useColorModeValue,
 } from "@chakra-ui/react";
 import NavBar from "../components/NavBar";
-import ProjectCard from "../components/ProjectCard";
+import ProjectCard from "../components/cards/ProjectCard";
+import EmoryMarketplaceCard from "../components/cards/EmoryMarketplaceCard";
 
 const Projects = () => {
   const { toggleColorMode } = useColorMode();
@@ -62,7 +63,7 @@ const Projects = () => {
           </Heading>
           <Divider mb="50px" />
           <Box align="center">
-            <ProjectCard projectInfo={projectInfo} />
+            <EmoryMarketplaceCard projectInfo={projectInfo} />
             <ProjectCard projectInfo={projectInfo2} />
             <ProjectCard projectInfo={projectInfo3} />
             <ProjectCard projectInfo={projectInfo4} />
