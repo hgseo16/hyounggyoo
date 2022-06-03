@@ -19,7 +19,7 @@ import NavBar from "../NavBar";
 import Paragraph from "../Paragraph";
 import YouTube from "react-youtube";
 
-const StockDataSeederCard = () => {
+const PersonalWebsiteCard = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
 
   return (
@@ -32,7 +32,11 @@ const StockDataSeederCard = () => {
       onClick={onOpen}
       boxShadow="dark-lg"
     >
-      <Image src="images/data_seeder.jpg" alt="xingAPI codebase" border="3px" />
+      <Image
+        src="images/persona_website.jpg"
+        alt="Personal Website"
+        border="3px"
+      />
       <Box p="6">
         <Box
           mt="1"
@@ -43,13 +47,11 @@ const StockDataSeederCard = () => {
           align="left"
           mb="15px"
         >
-          Stock Data Seeder
+          Hyoung Gyoo's personal website made using Next.js and Chakra UI.
         </Box>
         <Divider />
         <Box align="left" lineHeight="tight" noOfLines={3} mt="15px">
-          Data seeder written in python which regularly updates a local mysql
-          database with the price action of all the tickers from the
-          KOSPI/KOSDAQ market."
+          Content to be updated soon
         </Box>
         <Modal
           isOpen={isOpen}
@@ -65,7 +67,7 @@ const StockDataSeederCard = () => {
             backdropBrightness="80%"
           />
           <ModalContent>
-            <ModalHeader>Stock Data Seeder</ModalHeader>
+            <ModalHeader>Personal Website</ModalHeader>
             <ModalCloseButton />
             <Divider />
             <ModalBody mt="15px">Content to be updated soon</ModalBody>
@@ -77,4 +79,4 @@ const StockDataSeederCard = () => {
   );
 };
 
-export default StockDataSeederCard;
+export default PersonalWebsiteCard;

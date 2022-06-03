@@ -10,17 +10,11 @@ import NavBar from "../components/NavBar";
 import ProjectCard from "../components/cards/ProjectCard";
 import EmoryMarketplaceCard from "../components/cards/EmoryMarketplaceCard";
 import StockDataSeederCard from "../components/cards/StockDataSeederCard";
+import PersonalWebsiteCard from "../components/cards/PersonalWebsiteCard";
 
 const Projects = () => {
   const { toggleColorMode } = useColorMode();
   const formBackground = useColorModeValue("gray.100", "gray.700");
-
-  const projectInfo2 = {
-    projectTitle: "Stock Data Seeder",
-    summary:
-      "Data seeder written in python which regularly updates a local mysql database with the price action of all the tickers from the KOSPI/KOSDAQ market.",
-    p: "Content to be updated soon",
-  };
 
   const projectInfo3 = {
     imageUrl: "images/personal_website.jpg",
@@ -53,8 +47,7 @@ const Projects = () => {
           <Box align="center">
             <EmoryMarketplaceCard />
             <StockDataSeederCard />
-            <ProjectCard projectInfo={projectInfo2} />
-            <ProjectCard projectInfo={projectInfo3} />
+            <PersonalWebsiteCard />
             <ProjectCard projectInfo={projectInfo4} />
           </Box>
         </Box>
