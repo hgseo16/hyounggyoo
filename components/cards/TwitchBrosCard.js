@@ -19,7 +19,7 @@ import NavBar from "../NavBar";
 import Paragraph from "../Paragraph";
 import YouTube from "react-youtube";
 
-const PersonalWebsiteCard = () => {
+const TwitchBrosCard = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
 
   return (
@@ -33,8 +33,8 @@ const PersonalWebsiteCard = () => {
       boxShadow="dark-lg"
     >
       <Image
-        src="images/personal_website.jpg"
-        alt="Personal Website"
+        src="images/twitch_bros.png"
+        alt="Twitch Bros Homepage"
         border="3px"
       />
       <Box p="6">
@@ -47,11 +47,11 @@ const PersonalWebsiteCard = () => {
           align="left"
           mb="15px"
         >
-          Personal Website
+          Twitch Bros
         </Box>
         <Divider />
         <Box align="left" lineHeight="tight" noOfLines={3} mt="15px">
-          My personal website made using Next.js and Chakra UI.
+          Sentiment analysis of topics modeled from real-time Twitch chats.
         </Box>
         <Modal
           isOpen={isOpen}
@@ -67,7 +67,7 @@ const PersonalWebsiteCard = () => {
             backdropBrightness="80%"
           />
           <ModalContent>
-            <ModalHeader>Personal Website</ModalHeader>
+            <ModalHeader>Twitch Bros</ModalHeader>
             <ModalCloseButton />
             <Divider />
             <ModalBody mt="15px">Content to be updated soon</ModalBody>
@@ -79,4 +79,4 @@ const PersonalWebsiteCard = () => {
   );
 };
 
-export default PersonalWebsiteCard;
+export default TwitchBrosCard;

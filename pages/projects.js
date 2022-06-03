@@ -11,29 +11,11 @@ import ProjectCard from "../components/cards/ProjectCard";
 import EmoryMarketplaceCard from "../components/cards/EmoryMarketplaceCard";
 import StockDataSeederCard from "../components/cards/StockDataSeederCard";
 import PersonalWebsiteCard from "../components/cards/PersonalWebsiteCard";
+import TwitchBrosCard from "../components/cards/TwitchBrosCard";
 
 const Projects = () => {
   const { toggleColorMode } = useColorMode();
   const formBackground = useColorModeValue("gray.100", "gray.700");
-
-  const projectInfo3 = {
-    imageUrl: "images/personal_website.jpg",
-    imageAlt: "Personal Website",
-    endpoint: "personal_website",
-    projectTitle: "Personal Website",
-    summary: "Hyoung Gyoo's personal website made using Next.js and Chakra UI.",
-    p: "Content to be updated soon",
-  };
-
-  const projectInfo4 = {
-    imageUrl: "images/twitch_bros.png",
-    imageAlt: "Twitch Bros Homepage",
-    endpoint: "twitch_bros",
-    projectTitle: "Twitch Bros",
-    summary:
-      "Sentiment analysis of topics modeled from real-time Twitch chats.",
-    p: "Content to be updated soon",
-  };
 
   return (
     <Container maxW="80vh">
@@ -48,7 +30,7 @@ const Projects = () => {
             <EmoryMarketplaceCard />
             <StockDataSeederCard />
             <PersonalWebsiteCard />
-            <ProjectCard projectInfo={projectInfo4} />
+            <TwitchBrosCard />
           </Box>
         </Box>
       </Container>
