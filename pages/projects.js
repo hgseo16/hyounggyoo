@@ -9,25 +9,13 @@ import {
 import NavBar from "../components/NavBar";
 import ProjectCard from "../components/cards/ProjectCard";
 import EmoryMarketplaceCard from "../components/cards/EmoryMarketplaceCard";
+import StockDataSeederCard from "../components/cards/StockDataSeederCard";
 
 const Projects = () => {
   const { toggleColorMode } = useColorMode();
   const formBackground = useColorModeValue("gray.100", "gray.700");
 
-  const projectInfo = {
-    imageUrl: "images/emory_marketplace.png",
-    imageAlt: "Emory Marketplace Homepage",
-    endpoint: "emory_marketplace",
-    projectTitle: "Emory Marketplace",
-    summary:
-      "Website created using the MERN stack where Emory students can exchange textbooks.",
-    p: "Content to be updated soon",
-  };
-
   const projectInfo2 = {
-    imageUrl: "images/data_seeder.jpg",
-    imageAlt: "xingAPI codebase",
-    endpoint: "data_seeder",
     projectTitle: "Stock Data Seeder",
     summary:
       "Data seeder written in python which regularly updates a local mysql database with the price action of all the tickers from the KOSPI/KOSDAQ market.",
@@ -63,7 +51,8 @@ const Projects = () => {
           </Heading>
           <Divider mb="50px" />
           <Box align="center">
-            <EmoryMarketplaceCard projectInfo={projectInfo} />
+            <EmoryMarketplaceCard />
+            <StockDataSeederCard />
             <ProjectCard projectInfo={projectInfo2} />
             <ProjectCard projectInfo={projectInfo3} />
             <ProjectCard projectInfo={projectInfo4} />

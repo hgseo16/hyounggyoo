@@ -19,7 +19,7 @@ import NavBar from "../NavBar";
 import Paragraph from "../Paragraph";
 import YouTube from "react-youtube";
 
-const EmoryMarketplaceCard = () => {
+const StockDataSeederCard = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
 
   return (
@@ -32,11 +32,7 @@ const EmoryMarketplaceCard = () => {
       onClick={onOpen}
       boxShadow="dark-lg"
     >
-      <Image
-        src="images/emory_marketplace.png"
-        alt="Emory Marketplace Homepage"
-        border="3px"
-      />
+      <Image src="images/data_seeder.jpg" alt="xingAPI codebase" border="3px" />
       <Box p="6">
         <Box
           mt="1"
@@ -47,12 +43,13 @@ const EmoryMarketplaceCard = () => {
           align="left"
           mb="15px"
         >
-          Emory Marketplace
+          Stock Data Seeder
         </Box>
         <Divider />
         <Box align="left" lineHeight="tight" noOfLines={3} mt="15px">
-          Website created using the MERN stack where Emory students can exchange
-          textbooks.
+          Data seeder written in python which regularly updates a local mysql
+          database with the price action of all the tickers from the
+          KOSPI/KOSDAQ market."
         </Box>
         <Modal
           isOpen={isOpen}
@@ -68,15 +65,10 @@ const EmoryMarketplaceCard = () => {
             backdropBrightness="80%"
           />
           <ModalContent>
-            <ModalHeader>Emory Marketplace</ModalHeader>
+            <ModalHeader>Stock Data Seedere</ModalHeader>
             <ModalCloseButton />
             <Divider />
-            <ModalBody mt="15px">
-              Content to be updated soon
-              <AspectRatio maxW="560px" ratio={1}>
-                <YouTube videoId="k2TCLEPnoS0" />
-              </AspectRatio>
-            </ModalBody>
+            <ModalBody mt="15px">Content to be updated soon</ModalBody>
             <ModalFooter />
           </ModalContent>
         </Modal>
@@ -85,4 +77,4 @@ const EmoryMarketplaceCard = () => {
   );
 };
 
-export default EmoryMarketplaceCard;
+export default StockDataSeederCard;
