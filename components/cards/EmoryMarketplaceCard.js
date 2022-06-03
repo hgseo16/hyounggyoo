@@ -19,9 +19,10 @@ import NavBar from "../NavBar";
 import Paragraph from "../Paragraph";
 import YouTube from "react-youtube";
 
-const EmoryMarketplaceCard = (props) => {
-  const { imageUrl, imageAlt, endpoint, projectTitle, summary, p } =
-    props.projectInfo;
+const EmoryMarketplaceCard = () => {
+  const summary =
+    "Website created using the MERN stack where Emory students can exchange textbooks.";
+  const p = "Content to be updated soon";
   const { isOpen, onOpen, onClose } = useDisclosure();
 
   return (
@@ -34,7 +35,11 @@ const EmoryMarketplaceCard = (props) => {
       onClick={onOpen}
       boxShadow="dark-lg"
     >
-      <Image src={imageUrl} alt={imageAlt} border="3px" />
+      <Image
+        src={"images/emory_marketplace.png"}
+        alt={"Emory Marketplace Homepage"}
+        border="3px"
+      />
       <Box p="6">
         <Box
           mt="1"
@@ -45,11 +50,12 @@ const EmoryMarketplaceCard = (props) => {
           align="left"
           mb="15px"
         >
-          {projectTitle}
+          Emory Marketplace
         </Box>
         <Divider />
         <Box align="left" lineHeight="tight" noOfLines={3} mt="15px">
-          {summary}
+          Website created using the MERN stack where Emory students can exchange
+          textbooks.
         </Box>
         <Modal
           isOpen={isOpen}
@@ -65,11 +71,11 @@ const EmoryMarketplaceCard = (props) => {
             backdropBrightness="80%"
           />
           <ModalContent>
-            <ModalHeader>{projectTitle}</ModalHeader>
+            <ModalHeader>Emory Marketplace</ModalHeader>
             <ModalCloseButton />
             <Divider />
             <ModalBody mt="15px">
-              {p}
+              Content to be updated soon
               <AspectRatio maxW="560px" ratio={1}>
                 <YouTube videoId="k2TCLEPnoS0" />
               </AspectRatio>
