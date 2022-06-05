@@ -49,7 +49,7 @@ const StockDataSeederCard = () => {
         <Box align="left" lineHeight="tight" noOfLines={3} mt="15px">
           Data seeder written in python which regularly updates a local mysql
           database with the price action of all the tickers from the
-          KOSPI/KOSDAQ market."
+          KOSPI/KOSDAQ market.
         </Box>
         <Modal
           isOpen={isOpen}
