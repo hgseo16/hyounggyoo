@@ -25,6 +25,7 @@ const EmoryMarketplaceCard = () => {
   return (
     <Box
       maxW="45vh"
+      maxH="45vh"
       borderWidth="5px"
       borderRadius="lg"
       overflow="hidden"
@@ -72,10 +73,10 @@ const EmoryMarketplaceCard = () => {
             <ModalCloseButton />
             <Divider />
             <ModalBody mt="15px">
-              Content to be updated soon
               <AspectRatio maxW="560px" ratio={1}>
                 <YouTube videoId="k2TCLEPnoS0" />
               </AspectRatio>
+              Content to be updated soon
             </ModalBody>
             <ModalFooter />
           </ModalContent>

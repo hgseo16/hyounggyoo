@@ -36,6 +36,8 @@ const TwitchBrosCard = () => {
         src="images/twitch_bros.png"
         alt="Twitch Bros Homepage"
         border="3px"
+        maxW="45vh"
+        maxH="45vh"
       />
       <Box p="6">
         <Box
