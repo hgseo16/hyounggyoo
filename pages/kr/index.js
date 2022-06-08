@@ -21,6 +21,7 @@ import {
 } from "@chakra-ui/react";
 import NavBar from "../../kr_components/NavBar";
 import Paragraph from "../../components/Paragraph";
+import styles from "../styles/Home.module.css";
 
 const Home = () => {
   const { toggleColorMode } = useColorMode();
@@ -236,7 +237,9 @@ const Home = () => {
           </UnorderedList>
         </Box>
       </Container>
-      <Divider />
+      <footer className={styles.footer}>
+        © 2022 Hyoung Gyoo (Kevin) Seo. All Rights Reserved.
+      </footer>
     </Container>
   );
 };
